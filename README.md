@@ -263,12 +263,8 @@ try {
 
 ```mermaid
 flowchart TD
-    A[HL7 v2.x mensaje ADT] --> B[Mirth Connect Canal HL7→FHIR]
-    B --> C[Recurso FHIR Composition]
-    C --> D[Bundle tipo Document]
-    D --> E[Postman - Request POST]
-    E --> F[Servidor HAPI FHIR]
-    F --> G[Almacenamiento del Documento Clínico]
+    A[Archivo HL7] --> B[Manda petición a Mirth Connect]
+    B --> G[Almacenamiento del Documento Clínico]
 ```
 
 ---
